@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Constant</Title>
+      <Author>Devon Lehman</Author>
+      <Description>Creates a basic string constant</Description>
+      <HelpUrl>
+      </HelpUrl>
+      <Shortcut>
+      </Shortcut>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>constName</ID>
+          <ToolTip>
+          </ToolTip>
+          <Default>CONST_NAME</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>stringVal</ID>
+          <ToolTip>
+          </ToolTip>
+          <Default>StringValue</Default>
+          <Function>
+          </Function>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp"><![CDATA[public const string $constName$ = "$stringVal$";]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippet Format="1.0.0" xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <Header>
+    <SnippetTypes>
+      <SnippetType>SurroundsWith</SnippetType>
+      <SnippetType>Expansion</SnippetType>
+    </SnippetTypes>
+    <Title>Ajax Form</Title>
+    <Author>Devon Lehman</Author>
+    <Description>Creates an Ajax Form</Description>
+    <HelpUrl>
+    </HelpUrl>
+    <Shortcut>mvcaform</Shortcut>
+  </Header>
+  <Snippet>
+    <Declarations>
+      <Literal Editable="true">
+        <ID>Action</ID>
+        <ToolTip>Action</ToolTip>
+        <Default>Action</Default>
+      </Literal>
+      <Literal Editable="true">
+        <ID>Controller</ID>
+        <ToolTip>Controller</ToolTip>
+        <Default>Controller</Default>
+      </Literal>
+      <Literal Editable="true">
+        <ID>target</ID>
+        <ToolTip>target</ToolTip>
+        <Default>target</Default>
+      </Literal>
+    </Declarations>
+    <Code Language="html">
+      <![CDATA[@{
+    var $target$Target = "$target$Target";
+    var $target$LoadingElementID = "$target$loadingElementID";
+    var $target$FormID = "$target$Form";
+    var ajaxOpts = new AjaxOptions
+    {
+        UpdateTargetId = $target$Target,
+        LoadingElementId = $target$LoadingElementID,
+        OnBegin = "$$('#" + $target$Target + "').hide();",
+        OnComplete =  "$$('#" + $target$Target + "').show();",
+    };
+}
+
+@using (Ajax.BeginForm(MVC.$Controller$.$Action$(), ajaxOpts, new { role = "form", id = $target$FormID }))
+{
+    <div class="form-horizontal">
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+        $selected$$end$
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <button type="submit" class="btn btn-primary">
+                    <span class="glyphicon icon"></span>
+                    Search
+                </button>
+            </div>
+        </div>
+
+    </div>
+}
+<div id="@$target$Target">
+</div>
+@Html.Partial(MVC.Shared.Views._Loading, $target$LoadingElementID)
+<script>
+    $$('#@$target$FormID').submit();
+</script>
+]]></Code>
+  </Snippet>
+</CodeSnippet>

@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>SurroundsWith</SnippetType>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>
+        Notify Property
+      </Title>
+      <Author>Devon Lehman</Author>
+      <Description>
+        Creates a Property with a NotifyPropertyChanged
+      </Description>
+      <HelpUrl>
+      </HelpUrl>
+      <Shortcut>nprop</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>type</ID>
+          <ToolTip>
+          </ToolTip>
+          <Default>Type</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>PropertyName</ID>
+          <ToolTip>
+          </ToolTip>
+          <Default>Property</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>viewStateKey</ID>
+          <ToolTip>
+          </ToolTip>
+          <Default>viewStateKey</Default>
+          <Function>
+          </Function>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp"><![CDATA[private $type$ _$PropertyName$;
+public $type$ $PropertyName$ { get { return _$PropertyName$; } set { _$PropertyName$ = value; NotifyPropertyChanged(); } }]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

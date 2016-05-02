@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippet Format="1.0.0" xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <Header>
+    <SnippetTypes>
+      <SnippetType>SurroundsWith</SnippetType>
+      <SnippetType>Expansion</SnippetType>
+    </SnippetTypes>
+    <Title>Form</Title>
+    <Author>Devon Lehman</Author>
+    <Description>Creates a form</Description>
+    <HelpUrl>
+    </HelpUrl>
+    <Shortcut>mvcform</Shortcut>
+  </Header>
+  <Snippet>
+    <Declarations>
+      <Literal Editable="true">
+        <ID>ActionName</ID>
+        <ToolTip>ActionName</ToolTip>
+        <Default>ActionName</Default>
+        <Function>
+        </Function>
+      </Literal>
+      <Literal Editable="true">
+        <ID>Controller</ID>
+        <ToolTip>Controller</ToolTip>
+        <Default>Controller</Default>
+        <Function>
+        </Function>
+      </Literal>
+      <Literal Editable="true">
+        <ID>property</ID>
+        <ToolTip>property</ToolTip>
+        <Default>property</Default>
+        <Function>
+        </Function>
+      </Literal>
+      <Literal Editable="true">
+        <ID>Object</ID>
+        <ToolTip>Object</ToolTip>
+        <Default>Object</Default>
+        <Function>
+        </Function>
+      </Literal>
+    </Declarations>
+    <Code Language="html"><![CDATA[@using (Html.BeginForm(MVC.$Controller$.$ActionName$(), FormMethod.Post, new { role = "form" }))
+{
+    <div class="form-horizontal">
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+        $selected$$end$
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </div>
+
+    </div>
+}]]></Code>
+  </Snippet>
+</CodeSnippet>

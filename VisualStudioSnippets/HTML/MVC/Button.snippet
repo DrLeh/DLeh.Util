@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippet Format="1.0.0" xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <Header>
+    <SnippetTypes>
+      <SnippetType>SurroundsWith</SnippetType>
+      <SnippetType>Expansion</SnippetType>
+    </SnippetTypes>
+    <Title>Bootstrap Button</Title>
+    <Author>Devon Lehman</Author>
+    <Description>Creates a Button with an image</Description>
+    <HelpUrl>
+    </HelpUrl>
+    <Shortcut>bsbtn</Shortcut>
+  </Header>
+  <Snippet>
+    <Declarations>
+      <Literal Editable="true">
+        <ID>Text</ID>
+        <ToolTip>Text</ToolTip>
+        <Default>Text</Default>
+        <Function>
+        </Function>
+      </Literal>
+      <Literal Editable="true">
+        <ID>Class</ID>
+        <ToolTip>Class</ToolTip>
+        <Default>Class</Default>
+        <Function>
+        </Function>
+      </Literal>
+      <Literal Editable="true">
+        <ID>icon</ID>
+        <ToolTip>icon</ToolTip>
+        <Default>icon</Default>
+        <Function>
+        </Function>
+      </Literal>
+    </Declarations>
+    <Code Language="html"><![CDATA[<button type="button" class="btn btn-$Class$">
+    <span class="glyphicon $icon$"></span>
+    $Text$
+</button>]]></Code>
+  </Snippet>
+</CodeSnippet>

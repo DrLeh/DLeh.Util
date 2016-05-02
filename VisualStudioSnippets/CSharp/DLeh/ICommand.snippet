@@ -1,0 +1,35 @@
+﻿<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>
+        ICommand
+      </Title>
+      <Description>
+        Creates an ICommand property with no parameter
+      </Description>
+      <Shortcut>icmd</Shortcut>
+      <Author>Devon Lehman</Author>
+      <SnippetTypes>
+        <SnippetType>SurroundsWith</SnippetType>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>CommandName</ID>
+          <Default>CommandName</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="CSharp">
+        <![CDATA[private void $CommandName$()
+        {
+        
+        }        
+        
+        private ICommand _$CommandName$Command;
+        public ICommand $CommandName$Command { get { return _$CommandName$Command ?? (_$CommandName$Command = new RelayCommand($CommandName$)); } }]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

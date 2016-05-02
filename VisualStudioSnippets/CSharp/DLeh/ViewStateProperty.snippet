@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>
+        Viewstate Property
+      </Title>
+      <Author>Devon Lehman</Author>
+      <Description>
+        Creates a property that stores the value in the ViewState
+      </Description>
+      <HelpUrl>
+      </HelpUrl>
+      <Shortcut>
+      </Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>type</ID>
+          <ToolTip>
+          </ToolTip>
+          <Default>Type</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>propertyName</ID>
+          <ToolTip>
+          </ToolTip>
+          <Default>Property</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>viewStateKey</ID>
+          <ToolTip>
+          </ToolTip>
+          <Default>viewStateKey</Default>
+          <Function>
+          </Function>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp"><![CDATA[private string $viewStateKey$ = "$viewStateKey$";
+public $type$ $propertyName$ { get { return ($type$)ViewState[$viewStateKey$]; } set { ViewState[$viewStateKey$] = value; } }]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

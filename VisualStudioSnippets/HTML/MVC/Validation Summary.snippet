@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippet Format="1.0.0" xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <Header>
+    <SnippetTypes>
+      <SnippetType>SurroundsWith</SnippetType>
+      <SnippetType>Expansion</SnippetType>
+    </SnippetTypes>
+    <Title>Validation Summary</Title>
+    <Author>Devon Lehman</Author>
+    <Description>Creates an ValidationSummary</Description>
+    <HelpUrl>
+    </HelpUrl>
+    <Shortcut>valsum</Shortcut>
+  </Header>
+  <Snippet>
+    <Declarations>
+      <Literal Editable="true">
+        <ID>property</ID>
+        <ToolTip>property</ToolTip>
+        <Default>property</Default>
+        <Function>
+        </Function>
+      </Literal>
+    </Declarations>
+    <Code Language="html"><![CDATA[@Html.ValidationSummary(false, "", new { @class = "text-danger" })]]></Code>
+  </Snippet>
+</CodeSnippet>

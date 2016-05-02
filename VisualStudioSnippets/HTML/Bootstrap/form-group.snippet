@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Keywords>
+        <Keyword>fg</Keyword>
+      </Keywords>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>Bootstrap 3.x form group</Title>
+      <Author>Eric Lebetsamer</Author>
+      <Description>A form group with an input and a label.</Description>
+      <HelpUrl>
+      </HelpUrl>
+      <Shortcut>bs-form-group</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>id</ID>
+          <ToolTip>ID of the input</ToolTip>
+          <Default>form-group-input</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>label</ID>
+          <ToolTip>Text for the label</ToolTip>
+          <Default>My label</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>type</ID>
+          <ToolTip>Type of the input</ToolTip>
+          <Default>text</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>Prop</ID>
+          <ToolTip>Prop</ToolTip>
+          <Default>Prop</Default>
+          <Function>
+          </Function>
+        </Literal>
+      </Declarations>
+      <Code Language="html"><![CDATA[<div class="form-group">
+	@Html.LabelFor(x => x.$Prop$)
+	@Html.EditorFor(x => x.$Prop$, new { @class="form-control" })
+	<input type="$type$" class="form-control" id="$id$" placeholder="$label$">
+</div>]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>
+        Event Starter
+      </Title>
+      <Author>Devon Lehman</Author>
+      <Description>
+        Creates an event and a default firer that checks for null before firing
+      </Description>
+      <HelpUrl>
+      </HelpUrl>
+      <Shortcut>events</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>eventName</ID>
+          <ToolTip>
+          </ToolTip>
+          <Default>Event</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>eventArgType</ID>
+          <ToolTip>
+          </ToolTip>
+          <Default>EventArgs</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>eventHandlerType</ID>
+          <ToolTip>
+          </ToolTip>
+          <Default>EventHandler</Default>
+          <Function>
+          </Function>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp"><![CDATA[public event $eventHandlerType$ $eventName$;
+
+public void On$eventName$($eventArgType$ e)
+{
+    if($eventName$ != null) $eventName$(this, e);
+}]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

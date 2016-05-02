@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+        <SnippetType>SurroundsWith</SnippetType>
+      </SnippetTypes>
+      <Title>Singleton</Title>
+      <Author>Devon Lehman</Author>
+      <Description>Creates a singleton for a model</Description>
+      <HelpUrl>
+      </HelpUrl>
+      <Shortcut>sing</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>Model</ID>
+          <ToolTip>Model</ToolTip>
+          <Default>Model</Default>
+          <Function>
+          </Function>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp"><![CDATA[var $Model$ = Locator.Resolve<I$Model$>();]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

@@ -1,0 +1,7 @@
+C:\Projects\Git\DLeh.Util\bin\Debug\DLeh.Util.dll
+C:\Projects\Git\DLeh.Util\bin\Debug\DLeh.Util.pdb
+C:\Projects\Git\DLeh.Util\bin\Debug\Newtonsoft.Json.dll
+C:\Projects\Git\DLeh.Util\bin\Debug\Newtonsoft.Json.xml
+C:\Projects\Git\DLeh.Util\obj\Debug\DLeh.Util.csprojResolveAssemblyReference.cache
+C:\Projects\Git\DLeh.Util\obj\Debug\DLeh.Util.dll
+C:\Projects\Git\DLeh.Util\obj\Debug\DLeh.Util.pdb

@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippet Format="1.0.0" xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <Header>
+    <SnippetTypes>
+      <SnippetType>SurroundsWith</SnippetType>
+      <SnippetType>Expansion</SnippetType>
+    </SnippetTypes>
+    <Title>MVC Table</Title>
+    <Author>Devon Lehman</Author>
+    <Description>Creates a Table</Description>
+    <HelpUrl>
+    </HelpUrl>
+    <Shortcut>mvctable</Shortcut>
+  </Header>
+  <Snippet>
+    <Declarations>
+      <Literal Editable="true">
+        <ID>property</ID>
+        <ToolTip>property</ToolTip>
+        <Default>property</Default>
+        <Function>
+        </Function>
+      </Literal>
+      <Literal Editable="true">
+        <ID>Property2</ID>
+        <ToolTip>Property2</ToolTip>
+        <Default>Property2</Default>
+        <Function>
+        </Function>
+      </Literal>
+      <Literal Editable="true">
+        <ID>Property</ID>
+        <ToolTip>Property</ToolTip>
+        <Default>Property</Default>
+        <Function>
+        </Function>
+      </Literal>
+    </Declarations>
+    <Code Language="html"><![CDATA[<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>$Property$</th>
+            <th>$Property2$</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var item in Model) {
+            <tr>
+                <td>@item.$Property$</td>
+                <td>@item.$Property2$</td>
+            </tr>
+        }
+    </tbody>
+</table>]]></Code>
+  </Snippet>
+</CodeSnippet>

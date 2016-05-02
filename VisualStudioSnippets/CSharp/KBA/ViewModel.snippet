@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+        <SnippetType>SurroundsWith</SnippetType>
+      </SnippetTypes>
+      <Title>ViewModel</Title>
+      <Author>Devon Lehman</Author>
+      <Description>Creates a base viewmodel with usings, constructor, IsBusy property</Description>
+      <HelpUrl>
+      </HelpUrl>
+      <Shortcut>newviewmodel</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>namespace</ID>
+          <ToolTip>Namespace</ToolTip>
+          <Default>Namespace</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>class</ID>
+          <ToolTip>Class</ToolTip>
+          <Default>ClassName</Default>
+          <Function>
+          </Function>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp"><![CDATA[using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Linq;
+using System.Text;
+using System.Windows.Input;
+using KBA.AdminCentral.Model;
+using KBA.AdminCentral.Model.AdminDB;
+using KBA.Util.ViewModel;
+
+namespace KBA.AdminCentral.ViewModel.$namespace$
+{
+    public class $class$ViewModel : ViewModelBase
+    {
+        public $class$ViewModel()
+        {
+            if (!IsInDesignMode)
+                Init();
+        }
+
+        #region Properties
+
+
+
+        #endregion Properties
+
+
+        #region Methods
+
+        private void Init()
+        {
+
+        }
+
+        #endregion Methods
+
+
+        #region Commands
+
+
+
+        #endregion Commands
+    }
+}]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

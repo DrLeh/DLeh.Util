@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>Dependency Property</Title>
+      <Author>Devon Lehman</Author>
+      <Description>Creates a Dependency Property</Description>
+      <HelpUrl>
+      </HelpUrl>
+      <Shortcut>deprop</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>type</ID>
+          <ToolTip>
+          </ToolTip>
+          <Default>Type</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>depropname</ID>
+          <ToolTip>
+          </ToolTip>
+          <Default>propertyName</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>propname</ID>
+          <ToolTip>
+          </ToolTip>
+          <Default>PropertyName</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>parenttype</ID>
+          <ToolTip>
+          </ToolTip>
+          <Default>ThisUserControl</Default>
+          <Function>
+          </Function>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp"><![CDATA[public static readonly DependencyProperty $depropname$ = DependencyProperty.Register("$propname$", typeof($type$), typeof($parenttype$));
+public $type$ $propname$ { get { return this.GetValue($depropname$) as $type$; } set { this.SetValue($depropname$, value); } }]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

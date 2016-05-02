@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Grid Row and Column</Title>
+      <Shortcut>grc</Shortcut>
+      <Description>Adds Grid.Row and Grid.Column properties</Description>
+      <Author>Devon Lehman</Author>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>row</ID>
+          <Default>0</Default>
+        </Literal>
+        <Literal Editable="true">
+          <ID>column</ID>
+          <Default>0</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="XAML"><![CDATA[Grid.Row="$row$" Grid.Column="$column$"]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

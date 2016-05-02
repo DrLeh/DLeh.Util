@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippet Format="1.0.0" xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <Header>
+    <SnippetTypes>
+      <SnippetType>SurroundsWith</SnippetType>
+      <SnippetType>Expansion</SnippetType>
+    </SnippetTypes>
+    <Title>DropDownList</Title>
+    <Author>Devon Lehman</Author>
+    <Description>Creates an dropdownlist</Description>
+    <HelpUrl>
+    </HelpUrl>
+    <Shortcut>mvcddl</Shortcut>
+  </Header>
+  <Snippet>
+    <Declarations>
+      <Literal Editable="true">
+        <ID>elementName</ID>
+        <ToolTip>elementName</ToolTip>
+        <Default>elementName</Default>
+        <Function>
+        </Function>
+      </Literal>
+      <Literal Editable="true">
+        <ID>Options</ID>
+        <ToolTip>Options</ToolTip>
+        <Default>Options</Default>
+        <Function>
+        </Function>
+      </Literal>
+      <Literal Editable="true">
+        <ID>SelectedItem</ID>
+        <ToolTip>SelectedItem</ToolTip>
+        <Default>SelectedItem</Default>
+        <Function>
+        </Function>
+      </Literal>
+    </Declarations>
+    <Code Language="html"><![CDATA[@Html.DropDownList("$elementName$", new SelectList(new[] { "All" }.Concat(Model.$Options$), Model.$SelectedItem$), new { @class = "form-control" })]]></Code>
+  </Snippet>
+</CodeSnippet>

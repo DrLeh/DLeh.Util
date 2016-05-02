@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippet Format="1.0.0" xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <Header>
+    <SnippetTypes>
+      <SnippetType>SurroundsWith</SnippetType>
+      <SnippetType>Expansion</SnippetType>
+    </SnippetTypes>
+    <Title>Alert</Title>
+    <Author>Devon Lehman</Author>
+    <Description>Creates an Alert</Description>
+    <HelpUrl>
+    </HelpUrl>
+    <Shortcut>alert</Shortcut>
+  </Header>
+  <Snippet>
+    <Declarations>
+      <Literal Editable="true">
+        <ID>text</ID>
+        <ToolTip>text</ToolTip>
+        <Default>text</Default>
+        <Function>
+        </Function>
+      </Literal>
+    </Declarations>
+    <Code Language="html"><![CDATA[<div class="alert alert-warning alert-dismissable">
+    <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+    $text$
+</div>]]></Code>
+  </Snippet>
+</CodeSnippet>

@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>Bootstrap 3.x modal</Title>
+      <Author>Eric Lebetsamer</Author>
+      <Description>Modals are streamlined, but flexible, dialog prompts with the minimum required functionality and smart defaults.</Description>
+      <HelpUrl>
+      </HelpUrl>
+      <Shortcut>bs-modal</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>id</ID>
+          <ToolTip>ID of the modal</ToolTip>
+          <Default>myModal</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>title</ID>
+          <ToolTip>Title of the modal</ToolTip>
+          <Default>Modal title</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>content</ID>
+          <ToolTip>Content of the modal</ToolTip>
+          <Default>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>close-text</ID>
+          <ToolTip>Text for the "close" button</ToolTip>
+          <Default>Close</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>save-text</ID>
+          <ToolTip>Text for the "save" button</ToolTip>
+          <Default>Save</Default>
+          <Function>
+          </Function>
+        </Literal>
+      </Declarations>
+      <Code Language="html"><![CDATA[<div class="modal fade" id="$id$" tabindex="-1" role="dialog" aria-labelledby="$id$-label" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title" id="$id$-label">$title$</h4>
+			</div>
+			<div class="modal-body">
+				$content$
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">$close-text$</button>
+				<button type="button" class="btn btn-primary">$save-text$</button>
+			</div>
+		</div>
+	</div>
+</div>]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

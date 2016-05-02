@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippet Format="1.0.0" xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <Header>
+    <SnippetTypes>
+      <SnippetType>SurroundsWith</SnippetType>
+      <SnippetType>Expansion</SnippetType>
+    </SnippetTypes>
+    <Title>ActionLink</Title>
+    <Author>Devon Lehman</Author>
+    <Description>Creates an ActionLink</Description>
+    <HelpUrl>
+    </HelpUrl>
+    <Shortcut>alink</Shortcut>
+  </Header>
+  <Snippet>
+    <Declarations>
+      <Literal Editable="true">
+        <ID>Text</ID>
+        <ToolTip>Text</ToolTip>
+        <Default>Text</Default>
+        <Function>
+        </Function>
+      </Literal>
+      <Literal Editable="true">
+        <ID>Action</ID>
+        <ToolTip>Action</ToolTip>
+        <Default>Action</Default>
+        <Function>
+        </Function>
+      </Literal>
+      <Literal Editable="true">
+        <ID>Controller</ID>
+        <ToolTip>Controller</ToolTip>
+        <Default>Controller</Default>
+        <Function>
+        </Function>
+      </Literal>
+    </Declarations>
+    <Code Language="html"><![CDATA[Html.ActionLink("$Text$", MVC.$Controller$.$Action$())]]></Code>
+  </Snippet>
+</CodeSnippet>

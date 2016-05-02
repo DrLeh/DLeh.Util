@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6AB256A0-98A5-4C80-B724-48B87A4F5987}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DLeh.Util</RootNamespace>
+    <AssemblyName>DLeh.Util</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.8.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Date\BusinessDayChecker.cs" />
+    <Compile Include="Date\DateTimeExtensions.cs" />
+    <Compile Include="Date\DateUtil.cs" />
+    <Compile Include="Extensions\EnumerableExtensions.cs" />
+    <Compile Include="Extensions\EnumerationExtensions.cs" />
+    <Compile Include="Extensions\ExceptionExtensions.cs" />
+    <Compile Include="Extensions\StringExtensions.cs" />
+    <Compile Include="Extensions\XMLExtensions.cs" />
+    <Compile Include="Misc\Caching\CacheUtil.cs" />
+    <Compile Include="Misc\Caching\TimeSensitiveConcurrentDictionary.cs" />
+    <Compile Include="Misc\Caching\TimeSensitiveDictionary.cs" />
+    <Compile Include="Misc\Caching\TimeSensitiveLatch.cs" />
+    <Compile Include="Misc\CryptoHelper.cs" />
+    <Compile Include="Misc\CsvParser.cs" />
+    <Compile Include="Misc\DisabledEnumAttribute.cs" />
+    <Compile Include="Misc\Encrypted`1.cs" />
+    <Compile Include="Misc\EnumUtil.cs" />
+    <Compile Include="Misc\Json\InterfaceContractResolver.cs" />
+    <Compile Include="Misc\Json\JsonUtil.cs" />
+    <Compile Include="Misc\Json\PrivateSetterContractResolver.cs" />
+    <Compile Include="Misc\PredicateBuilder.cs" />
+    <Compile Include="Misc\StringUtil.cs" />
+    <Compile Include="Misc\XmlHelpers.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="VisualStudioSnippets\CSharp\DLeh\BackgroundWorker.snippet" />
+    <None Include="VisualStudioSnippets\CSharp\DLeh\Constant.snippet" />
+    <None Include="VisualStudioSnippets\CSharp\DLeh\DataEventStarter.snippet" />
+    <None Include="VisualStudioSnippets\CSharp\DLeh\DependencyProperty.snippet" />
+    <None Include="VisualStudioSnippets\CSharp\DLeh\Euler.snippet" />
+    <None Include="VisualStudioSnippets\CSharp\DLeh\EventHandler.snippet" />
+    <None Include="VisualStudioSnippets\CSharp\DLeh\EventStarter.snippet" />
+    <None Include="VisualStudioSnippets\CSharp\DLeh\ICommand with Param.snippet" />
+    <None Include="VisualStudioSnippets\CSharp\DLeh\ICommand.snippet" />
+    <None Include="VisualStudioSnippets\CSharp\DLeh\Mock Object.snippet" />
+    <None Include="VisualStudioSnippets\CSharp\DLeh\MVC Date Attribute.snippet" />
+    <None Include="VisualStudioSnippets\CSharp\DLeh\NotifyProperty.snippet" />
+    <None Include="VisualStudioSnippets\CSharp\DLeh\Region.snippet" />
+    <None Include="VisualStudioSnippets\CSharp\DLeh\ViewStateProperty.snippet" />
+    <None Include="VisualStudioSnippets\CSharp\KBA\Singleton.snippet" />
+    <None Include="VisualStudioSnippets\CSharp\KBA\usingAdminDBDataContext.snippet" />
+    <None Include="VisualStudioSnippets\CSharp\KBA\usingDataRetrieval Read Only.snippet" />
+    <None Include="VisualStudioSnippets\CSharp\KBA\usingDataRetrieval.snippet" />
+    <None Include="VisualStudioSnippets\CSharp\KBA\ViewModel.snippet" />
+    <None Include="VisualStudioSnippets\HTML\Bootstrap\accordion.snippet" />
+    <None Include="VisualStudioSnippets\HTML\Bootstrap\alert.snippet" />
+    <None Include="VisualStudioSnippets\HTML\Bootstrap\badge.snippet" />
+    <None Include="VisualStudioSnippets\HTML\Bootstrap\breadcrumb.snippet" />
+    <None Include="VisualStudioSnippets\HTML\Bootstrap\btn-dropdown-split.snippet" />
+    <None Include="VisualStudioSnippets\HTML\Bootstrap\btn-dropdown.snippet" />
+    <None Include="VisualStudioSnippets\HTML\Bootstrap\btn-group.snippet" />
+    <None Include="VisualStudioSnippets\HTML\Bootstrap\btn-toolbar.snippet" />
+    <None Include="VisualStudioSnippets\HTML\Bootstrap\button.snippet" />
+    <None Include="VisualStudioSnippets\HTML\Bootstrap\carousel.snippet" />
+    <None Include="VisualStudioSnippets\HTML\Bootstrap\closeicon.snippet" />
+    <None Include="VisualStudioSnippets\HTML\Bootstrap\collapse.snippet" />
+    <None Include="VisualStudioSnippets\HTML\Bootstrap\form-group-checkbox.snippet" />
+    <None Include="VisualStudioSnippets\HTML\Bootstrap\form-group-horizontal-checkbox.snippet" />
+    <None Include="VisualStudioSnippets\HTML\Bootstrap\form-group-horizontal.snippet" />
+    <None Include="VisualStudioSnippets\HTML\Bootstrap\form-group-inline.snippet" />
+    <None Include="VisualStudioSnippets\HTML\Bootstrap\form-group-radio.snippet" />
+    <None Include="VisualStudioSnippets\HTML\Bootstrap\form-group.snippet" />
+    <None Include="VisualStudioSnippets\HTML\Bootstrap\form-horizontal.snippet" />
+    <None Include="VisualStudioSnippets\HTML\Bootstrap\form-inline.snippet" />
+    <None Include="VisualStudioSnippets\HTML\Bootstrap\glyphicon.snippet" />
+    <None Include="VisualStudioSnippets\HTML\Bootstrap\input-group.snippet" />
+    <None Include="VisualStudioSnippets\HTML\Bootstrap\jumbotron.snippet" />
+    <None Include="VisualStudioSnippets\HTML\Bootstrap\label.snippet" />
+    <None Include="VisualStudioSnippets\HTML\Bootstrap\list-group.snippet" />
+    <None Include="VisualStudioSnippets\HTML\Bootstrap\media-list.snippet" />
+    <None Include="VisualStudioSnippets\HTML\Bootstrap\media-object.snippet" />
+    <None Include="VisualStudioSnippets\HTML\Bootstrap\modal.snippet" />
+    <None Include="VisualStudioSnippets\HTML\Bootstrap\nav-pills.snippet" />
+    <None Include="VisualStudioSnippets\HTML\Bootstrap\nav-tabs.snippet" />
+    <None Include="VisualStudioSnippets\HTML\Bootstrap\navbar.snippet" />
+    <None Include="VisualStudioSnippets\HTML\Bootstrap\page-header.snippet" />
+    <None Include="VisualStudioSnippets\HTML\Bootstrap\pager.snippet" />
+    <None Include="VisualStudioSnippets\HTML\Bootstrap\pagination.snippet" />
+    <None Include="VisualStudioSnippets\HTML\Bootstrap\panel.snippet" />
+    <None Include="VisualStudioSnippets\HTML\Bootstrap\popover.snippet" />
+    <None Include="VisualStudioSnippets\HTML\Bootstrap\progress-bar.snippet" />
+    <None Include="VisualStudioSnippets\HTML\Bootstrap\row.snippet" />
+    <None Include="VisualStudioSnippets\HTML\Bootstrap\template.snippet" />
+    <None Include="VisualStudioSnippets\HTML\Bootstrap\thumbnail.snippet" />
+    <None Include="VisualStudioSnippets\HTML\Bootstrap\tooltip.snippet" />
+    <None Include="VisualStudioSnippets\HTML\DLeh\submit.snippet" />
+    <None Include="VisualStudioSnippets\HTML\DLeh\table.snippet" />
+    <None Include="VisualStudioSnippets\HTML\DLeh\td.snippet" />
+    <None Include="VisualStudioSnippets\HTML\DLeh\tr.snippet" />
+    <None Include="VisualStudioSnippets\HTML\MVC\ActionLink.snippet" />
+    <None Include="VisualStudioSnippets\HTML\MVC\AjaxForm.snippet" />
+    <None Include="VisualStudioSnippets\HTML\MVC\Alert.snippet" />
+    <None Include="VisualStudioSnippets\HTML\MVC\Button.snippet" />
+    <None Include="VisualStudioSnippets\HTML\MVC\DisplayFor.snippet" />
+    <None Include="VisualStudioSnippets\HTML\MVC\DropDownList.snippet" />
+    <None Include="VisualStudioSnippets\HTML\MVC\EditorFor.snippet" />
+    <None Include="VisualStudioSnippets\HTML\MVC\Form.snippet" />
+    <None Include="VisualStudioSnippets\HTML\MVC\FormGroup.snippet" />
+    <None Include="VisualStudioSnippets\HTML\MVC\FormGroupInline.snippet" />
+    <None Include="VisualStudioSnippets\HTML\MVC\LabelFor.snippet" />
+    <None Include="VisualStudioSnippets\HTML\MVC\Table.snippet" />
+    <None Include="VisualStudioSnippets\HTML\MVC\Validation Summary.snippet" />
+    <None Include="VisualStudioSnippets\HTML\MVC\ValidationFor.snippet" />
+    <None Include="VisualStudioSnippets\XAML\DLeh\Grid.snippet" />
+    <None Include="VisualStudioSnippets\XAML\DLeh\GridRowColumn.snippet" />
+    <None Include="VisualStudioSnippets\XAML\DLeh\Margin.snippet" />
+    <None Include="VisualStudioSnippets\XAML\DLeh\TextBlock.snippet" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippet Format="1.0.0" xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <Header>
+    <Keywords>
+      <Keyword>
+      </Keyword>
+    </Keywords>
+    <SnippetTypes>
+      <SnippetType>SurroundsWith</SnippetType>
+      <SnippetType>Expansion</SnippetType>
+    </SnippetTypes>
+    <Title>table</Title>
+    <Author>Devon Lehman</Author>
+    <Description>Creates a bootstrap table</Description>
+    <HelpUrl>
+    </HelpUrl>
+    <Shortcut>bstable</Shortcut>
+  </Header>
+  <Snippet>
+    <Declarations>
+      <Literal Editable="true">
+        <ID>obj</ID>
+        <ToolTip>obj</ToolTip>
+        <Default>obj</Default>
+        <Function>
+        </Function>
+      </Literal>
+      <Literal Editable="true">
+        <ID>Property</ID>
+        <ToolTip>Property</ToolTip>
+        <Default>Property</Default>
+        <Function>
+        </Function>
+      </Literal>
+    </Declarations>
+    <Code Language="html"><![CDATA[<table class="table table-striped table-hover">
+    <thead>
+        <tr>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead> 
+    <tbody>   
+    @foreach(var $obj$ in Model.$Property$)
+    {
+        <tr>
+            <td>$selected$$end$</td>
+            <td></td>
+        </tr>
+    }
+    </tbody>
+</table>]]></Code>
+  </Snippet>
+</CodeSnippet>

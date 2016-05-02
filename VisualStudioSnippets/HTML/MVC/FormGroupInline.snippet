@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippet Format="1.0.0" xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <Header>
+    <SnippetTypes>
+      <SnippetType>SurroundsWith</SnippetType>
+      <SnippetType>Expansion</SnippetType>
+    </SnippetTypes>
+    <Title>FormGroup Inline</Title>
+    <Author>Devon Lehman</Author>
+    <Description>Creates an FormGroup for Inline usage</Description>
+    <HelpUrl>
+    </HelpUrl>
+    <Shortcut>fgi</Shortcut>
+  </Header>
+  <Snippet>
+    <Declarations>
+      <Literal Editable="true">
+        <ID>property</ID>
+        <ToolTip>property</ToolTip>
+        <Default>property</Default>
+        <Function>
+        </Function>
+      </Literal>
+      <Literal Editable="true">
+        <ID>PropertyName</ID>
+        <ToolTip>PropertyName</ToolTip>
+        <Default>PropertyName</Default>
+        <Function>
+        </Function>
+      </Literal>
+    </Declarations>
+    <Code Language="html"><![CDATA[<div class="form-group">
+    @Html.LabelFor(model => model.$PropertyName$, htmlAttributes: new { @class = "control-label" })
+    @Html.EditorFor(model => model.$PropertyName$, new { htmlAttributes = new { @class = "form-control" } })
+    @Html.ValidationMessageFor(model => model.$PropertyName$, "", new { @class = "text-danger" })
+</div>]]></Code>
+  </Snippet>
+</CodeSnippet>

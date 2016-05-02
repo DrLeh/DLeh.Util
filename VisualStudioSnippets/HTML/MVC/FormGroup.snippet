@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippet Format="1.0.0" xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <Header>
+    <SnippetTypes>
+      <SnippetType>SurroundsWith</SnippetType>
+      <SnippetType>Expansion</SnippetType>
+    </SnippetTypes>
+    <Title>FormGroup</Title>
+    <Author>Devon Lehman</Author>
+    <Description>Creates an FormGroup</Description>
+    <HelpUrl>
+    </HelpUrl>
+    <Shortcut>fg</Shortcut>
+  </Header>
+  <Snippet>
+    <Declarations>
+      <Literal Editable="true">
+        <ID>property</ID>
+        <ToolTip>property</ToolTip>
+        <Default>property</Default>
+        <Function>
+        </Function>
+      </Literal>
+    </Declarations>
+    <Code Language="html"><![CDATA[<div class="form-group">
+    @Html.LabelFor(model => model.$property$, htmlAttributes: new { @class = "control-label col-md-2" })
+    <div class="col-md-10">
+        @Html.EditorFor(model => model.$property$, new { htmlAttributes = new { @class = "form-control" } })
+        @Html.ValidationMessageFor(model => model.$property$, "", new { @class = "text-danger" })
+    </div>
+</div>]]></Code>
+  </Snippet>
+</CodeSnippet>

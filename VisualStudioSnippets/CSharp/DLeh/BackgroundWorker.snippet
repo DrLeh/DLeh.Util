@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Background Worker</Title>
+      <Author>Devon Lehman</Author>
+      <Description>Creates a background worker with DoWork, RunWorkerCompleted instantiated</Description>
+      <HelpUrl>
+      </HelpUrl>
+      <Shortcut>bg</Shortcut>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+        <SnippetType>SurroundsWith</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Code Language="csharp">
+        <![CDATA[var bg = new BackgroundWorker();
+bg.DoWork += (bgs, bge) =>
+{
+    $selected$$end$
+};
+bg.RunWorkerCompleted += (bgs, bge) =>
+{
+    IsBusy = false;
+};
+IsBusy = true;
+bg.RunWorkerAsync();]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

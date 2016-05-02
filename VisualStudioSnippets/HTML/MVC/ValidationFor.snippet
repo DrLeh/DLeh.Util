@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippet Format="1.0.0" xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <Header>
+    <SnippetTypes>
+      <SnippetType>SurroundsWith</SnippetType>
+      <SnippetType>Expansion</SnippetType>
+    </SnippetTypes>
+    <Title>ValidationFor</Title>
+    <Author>Devon Lehman</Author>
+    <Description>Creates an ValidationMessageFor</Description>
+    <HelpUrl>
+    </HelpUrl>
+    <Shortcut>vfor</Shortcut>
+  </Header>
+  <Snippet>
+    <Declarations>
+      <Literal Editable="true">
+        <ID>property</ID>
+        <ToolTip>property</ToolTip>
+        <Default>property</Default>
+        <Function>
+        </Function>
+      </Literal>
+    </Declarations>
+    <Code Language="html"><![CDATA[@Html.ValidationMessageFor(model => model.$property$, "", new { @class = "text-danger" })]]></Code>
+  </Snippet>
+</CodeSnippet>
