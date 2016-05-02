@@ -71,6 +71,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <None Include="Readme.md" />
     <None Include="VisualStudioSnippets\CSharp\DLeh\BackgroundWorker.snippet" />
     <None Include="VisualStudioSnippets\CSharp\DLeh\Constant.snippet" />
     <None Include="VisualStudioSnippets\CSharp\DLeh\DataEventStarter.snippet" />
