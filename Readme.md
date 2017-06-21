@@ -1,8 +1,8 @@
-﻿#DLeh.Util
+﻿# DLeh.Util
 
 This library contains various pieces of uiltity code that are useful in many contexts. This project is mostly here for my future reference.
 
-##Contents
+## Contents
 
 - Date Utilities like checking for a business day, finding nearby significant dates, quarter start and end dates, etc.
 - Extension Methods
