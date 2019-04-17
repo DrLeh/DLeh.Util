@@ -1,0 +1,6 @@
+﻿{
+  "MySetting": "Web Setting",
+  "Db": {
+    "MyAppConnectionString": ""
+  }
+}

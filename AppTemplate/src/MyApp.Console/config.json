@@ -1,0 +1,6 @@
+﻿{
+  "MySetting": "Console Setting",
+  "Db": {
+    "ConnectionString" :  "MyConnStr"
+  }
+}
